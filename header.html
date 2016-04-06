@@ -24,6 +24,51 @@
 
 <link rel="stylesheet" href="//moreonion.github.io/savethechildren_uk-templates/stylesheets/theme.min.css">
 
+<!-- Google Analytics Tracking Code 2013 -->
+
+<script type="text/javascript">
+
+  var ga_desc = "||PAGE_TITLE||";
+
+  ga_desc = ga_desc.replace(/ /g, '_');
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1001179-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_setCustomVar', 1, 'Engaging Networks', ga_desc, 3 ]);
+
+  /* if there is no page title entered */
+  if (ga_desc.indexOf("null") == -1) {
+    _gaq.push(['_trackPageview', '' + ga_desc]);
+  }  else {
+    _gaq.push(['_trackPageview', '/eactivist/page_not_found/']);
+  }
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Google Analytics Tracking Code 2013 -->
+
+<script>
+dataLayer=[];
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFTL33"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFTL33');</script>
+<!-- End Google Tag Manager -->
+
 </head>
 
 <body>

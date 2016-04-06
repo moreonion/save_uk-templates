@@ -19,6 +19,11 @@ $(document).ready(function(){
     $('form').addClass('middle');
   }
 
+  // button placement (shift buttons above first below-form element)
+  if ($('.below-form').length) {
+    $('.below-form').first().parent().before($('.eaSubmitResetButtonGroup'));
+  }
+
 // ---------- "show more" toggle ------------------------------------
 
   $('.info-toggle').each(function(){

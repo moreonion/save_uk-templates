@@ -2834,6 +2834,10 @@ h6 {
   box-sizing: border-box;
 }
 .en_right_wrapper {
+  font-size: 0.9em;
+  font-size: 0.9rem;
+  line-height: 1.66666667em;
+  margin-bottom: 1.66666667em;
   background-color: #fefefe;
   padding: 1.25em;
   -webkit-box-sizing: border-box;
@@ -2924,7 +2928,7 @@ textarea,
 select,
 .selecter .selecter-selected {
   font-size: 120%;
-  background-color: #fafafa;
+  background-color: #ffffff;
   border: 2px solid #b4b2ad;
   font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
   font-weight: normal;
@@ -2945,7 +2949,7 @@ input[type="tel"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-  background: #fafafa none;
+  background: #ffffff none;
   border-color: #a8a5a0;
   color: #333333;
   outline: none;
@@ -2969,16 +2973,21 @@ label,
 .eaFormElementLabel,
 .eaQuestionLabel,
 .picker .picker-label {
-  font-size: 0.85em;
-  font-size: 0.85rem;
-  line-height: 1.76470588em;
-  margin-bottom: 1.76470588em;
+  font-size: 0.9em;
+  font-size: 0.9rem;
+  line-height: 1.66666667em;
+  margin-bottom: 1.66666667em;
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
   font-weight: bold;
   font-style: normal;
   display: block;
   margin-bottom: 0;
+  margin-top: 0.375em;
   color: #000000;
+  font-weight: normal;
+}
+.eaQuestionLabel {
+  margin-top: 0.75em;
 }
 .eaQuestionLabel {
   margin-bottom: 0.75em;
@@ -3025,11 +3034,11 @@ input[type="checkbox"] {
 .picker .picker-label {
   float: none;
   display: block;
-  margin-left: 42px;
+  margin-left: 47px;
   margin-top: 4px;
 }
 .picker .picker-handle {
-  background-color: #fafafa;
+  background-color: #ffffff;
   height: 32px;
   width: 32px;
   border-color: #b4b2ad;
@@ -3067,6 +3076,10 @@ input[type="checkbox"] {
 .picker.picker-checkbox .picker-handle {
   border-radius: 0;
 }
+/* ---------- question textfield ------------------------------------ */
+.eaQuestionTextfieldFormFieldContainer {
+  margin-top: -0.75em;
+}
 /* ---------- select ------------------------------------------------ */
 .eaQuestionSelectFormFieldContainer {
   position: relative;
@@ -3082,11 +3095,16 @@ input[type="checkbox"] {
   box-sizing: border-box;
 }
 .selecter .selecter-selected {
-  background: url(../images/jquery.fs.selecter-arrow.png) no-repeat right #fafafa;
+  background: url(../images/jquery.fs.selecter-arrow.png) no-repeat right #ffffff;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 .selecter.open .selecter-selected,
 .selecter.focus .selecter-selected {
   border-color: #a8a5a0;
+  background-color: #ffffff;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 .selecter .selecter-options {
   border-color: #a8a5a0;
@@ -3098,6 +3116,10 @@ input[type="checkbox"] {
   line-height: 1.5em;
   margin-bottom: 1.5em;
   margin-bottom: 0;
+}
+.selecter:hover .selecter-selected,
+.selecter:focus .selecter-selected {
+  background-color: #ffffff;
 }
 /* ---------- validation -------------------------------------------- */
 .eaAjaxErrorMessageContainer {
@@ -3426,4 +3448,34 @@ ul.share-links .twitter span.icon {
   visibility: hidden;
   line-height: 0;
   height: 0;
+}
+/* ==================================================================
+ * else
+ * ================================================================== */
+/* ---------- form text ---------------------------------------------- */
+.form-text {
+  line-height: 1.2em;
+  margin: 0.75em 0;
+}
+/* ---------- privacy text ------------------------------------------- */
+.privacy-text {
+  color: #b4b2ad;
+  line-height: 1.2em;
+  margin: 0.75em 0;
+}
+/* ---------- background info ---------------------------------------- */
+a.info-toggle {
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  padding-left: 30px;
+  background: url(../images/plus.png) 0px 8px no-repeat transparent;
+  margin: 0.75em 0;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+}
+#background-info .close {
+  display: none;
 }

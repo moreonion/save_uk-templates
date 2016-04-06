@@ -89,3 +89,33 @@ Place this snippet on the thank you page to track submissions (it's hidden so it
 ```html
 <input type="hidden" name="track-submission" value="1">
 ```
+
+## copy boxes below the form fields
+
+Everything that comes below the actual form fields needs the class `below-form`:
+
+```html
+<div class="below-form">
+  your content
+</div>
+```
+## form text
+
+Include this for text snippets in your form.
+
+```html
+<div class="from-text">
+  Some random text.
+</div>
+```
+
+## privacy text
+
+Include this at the bottom of your form for the (lighter) privacy text.
+
+```html
+<div class="privacy-text below-form">
+  Privacy text.
+</div>
+```
+

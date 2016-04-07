@@ -144,4 +144,36 @@ $(document).ready(function(){
     targetDataColumn: 'participatingSupporters'
   });
 
+// ---------- mobile link button ------------------------------------
+
+  var $waypointContainer = $('#fixed-waypoint-container');
+  var $waypointTarget = $('.en_right_wrapper').first(); // if no anchor then default to form
+  // if we have a visible button then use the anchor to determine, when to switch
+  if ($('#fixed-waypoint-container').hasClass('visible') && $('#fixed-waypoint-anchor').length > 0) {
+    $waypointTarget = $('#fixed-waypoint-anchor');
+  }
+  var waypoint = new Waypoint({
+    element: $waypointTarget[0],
+    handler: function(direction) {
+      if (direction === 'down') {
+        $('#fixed-waypoint-container').removeClass('sticky');
+      } else {
+        $('#fixed-waypoint-container').addClass('sticky');
+      }
+    },
+    offset: '110%'
+  })
+
+  $('#fixed-waypoint-container a.button').on('click', function(e) {
+    var $toggle = $(this);
+    var $target = $('a[name=action]');
+    // if no #action anchor is set, try the .en_right_wrapper
+    if ($target.length > 0) {
+      $target = $('.en_right_wrapper').first();
+    }
+    if ($target.length > 0) {
+      $('html,body').animate({scrollTop:$target.offset().top - 10}, 500);
+    }
+    e.preventDefault();
+  });
 });

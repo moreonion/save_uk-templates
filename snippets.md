@@ -34,6 +34,17 @@ The `info-toggle` element enables the "show more info" logic. A click on the tog
 
 This makes your videos responsive, so they will always fit on the screen (even on tiny mobile screens).
 
+## show/hide stuff depending on screen size
+
+If you want some elements to show up on a certain screen size only, you may add any of the following classes: "mobile-only", "desktop-only", "hide-on-mobile", "hide-on-desktop".
+
+Let's say you want to add a copy block to desktop size screens that would be too distracting on mobile devices, then you can wrap it in a container to display on desktop only (hide-on-mobile would have the same effect):
+
+```html
+<div class="desktop-only">
+  copy block that's just too much for mobile
+</div>
+```
 
 ## progress bar (thermometer)
 
@@ -119,3 +130,43 @@ Include this at the bottom of your form for the (lighter) privacy text.
 </div>
 ```
 
+## footer links
+
+This adds some footer links. Past this snippet to a copy box to add a footer to a particular page, or into the template footer if you'd like to have the same footer on every page.
+
+```html
+<div id="footer">
+  <ul class="menu">
+    <li><a href="{{link url}}">{{link text}}</a></li>
+    <li><a href="{{link url}}">{{link text}}</a></li>
+  </ul>
+</div>
+```
+
+Replace the `{{placeholders}}` with the real links. Please do not add more than 2-4 items, or the menu will get to big for some screen sizes.
+
+## mobile link to jump to the form
+
+Mark the position of the form with an anchor name:
+
+```html
+<a name="action"></a>
+```
+
+Then put the link button into your content:
+
+```html
+<span id="fixed-waypoint-anchor" class="mobile-only"></span>
+<div id="fixed-waypoint-container" class="sticky mobile-only">
+  <a href="#action" class="button">Click</a>
+</div>
+```
+
+If the button should be visible in the content when scrolling down, add the class `visible` to the container:
+
+```html
+<span id="fixed-waypoint-anchor" class="mobile-only"></span>
+<div id="fixed-waypoint-container" class="sticky mobile-only visible">
+  <a href="#action" class="button">Click</a>
+</div>
+```

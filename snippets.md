@@ -10,6 +10,15 @@ Also, when copying text from a word processor (e.g. Word or Pages) to an EN copy
 
 To show validation messages on form fields, you'll need to enable error alerts for your forms in EN.
 
+## videos
+
+```html
+<div class="video">
+  Paste the embed code from youtube, vimeo, … here
+</div>
+```
+
+This makes your videos responsive, so they will always fit on the screen (even on tiny mobile screens).
 
 ## background info
 
@@ -24,16 +33,6 @@ To show validation messages on form fields, you'll need to enable error alerts f
 
 The `info-toggle` element enables the "show more info" logic. A click on the toggle shows the target element, which has the id referenced in the toggles `href`-attribute: in this example `background-info`.
 
-## videos
-
-```html
-<div class="video">
-  Paste the embed code from youtube, vimeo, … here
-</div>
-```
-
-This makes your videos responsive, so they will always fit on the screen (even on tiny mobile screens).
-
 ## show/hide stuff depending on screen size
 
 If you want some elements to show up on a certain screen size only, you may add any of the following classes: "mobile-only", "desktop-only", "hide-on-mobile", "hide-on-desktop".
@@ -45,6 +44,47 @@ Let's say you want to add a copy block to desktop size screens that would be too
   copy block that's just too much for mobile
 </div>
 ```
+
+## mobile link to jump to the form
+
+Mark the position of the form with an anchor name:
+
+```html
+<a name="action"></a>
+```
+
+Then put the link button into your content:
+
+```html
+<span id="fixed-waypoint-anchor" class="mobile-only"></span>
+<div id="fixed-waypoint-container" class="sticky mobile-only">
+  <a href="#action" class="button">Click</a>
+</div>
+```
+
+If the button should be visible in the content when scrolling down, add the class `visible` to the container:
+
+```html
+<span id="fixed-waypoint-anchor" class="mobile-only"></span>
+<div id="fixed-waypoint-container" class="sticky mobile-only visible">
+  <a href="#action" class="button">Click</a>
+</div>
+```
+
+## footer links
+
+This adds some footer links. Past this snippet into the template footer if you'd like to have the same footer on every page.
+
+```html
+<div id="footer">
+  <ul class="menu">
+    <li><a href="{{link url}}">{{link text}}</a></li>
+    <li><a href="{{link url}}">{{link text}}</a></li>
+  </ul>
+</div>
+```
+
+Replace the `{{placeholders}}` with the real links. Please do not add more than 2-4 items, or the menu will get to big for some screen sizes.
 
 ## progress bar (thermometer)
 
@@ -62,6 +102,47 @@ Feel free to replace the default copy with a text of your own! The numbers for `
 To set a new target, change the value for `data-target`. Change `data-start` to add an initial value, e.g. offline supporters. If the data-attributes are missing, the default values shown above will be used instead.
 
 Unfortunately, this is a little tricky because the EN editor keeps deleting all data-tags. To save them, you'll have to disable the editor by clicking the top left x-button.
+```
+
+## form text
+
+Include this for text snippets in your form.
+
+```html
+<div class="form-text">
+  Some random text.
+</div>
+```
+
+## copy boxes below the form fields
+
+Everything that comes below the actual form fields needs the class `below-form`:
+
+```html
+<div class="below-form">
+  your content
+</div>
+```
+
+## privacy text
+
+Include this at the bottom of your form for the (lighter) privacy text.
+
+```html
+<div class="privacy-text below-form">
+  Privacy text.
+</div>
+```
+
+## form steps
+
+If you’d like to add an image at the top of the form that spans across the whole column, e.g. to indicate the progress through the form steps, use this snippet:
+
+```html
+<div class="steps">
+  Paste your image here
+</div>
+```
 
 ## share links
 
@@ -99,74 +180,3 @@ Place this snippet on the thank you page to track submissions (it's hidden so it
 
 ```html
 <input type="hidden" name="track-submission" value="1">
-```
-
-## copy boxes below the form fields
-
-Everything that comes below the actual form fields needs the class `below-form`:
-
-```html
-<div class="below-form">
-  your content
-</div>
-```
-## form text
-
-Include this for text snippets in your form.
-
-```html
-<div class="from-text">
-  Some random text.
-</div>
-```
-
-## privacy text
-
-Include this at the bottom of your form for the (lighter) privacy text.
-
-```html
-<div class="privacy-text below-form">
-  Privacy text.
-</div>
-```
-
-## footer links
-
-This adds some footer links. Past this snippet to a copy box to add a footer to a particular page, or into the template footer if you'd like to have the same footer on every page.
-
-```html
-<div id="footer">
-  <ul class="menu">
-    <li><a href="{{link url}}">{{link text}}</a></li>
-    <li><a href="{{link url}}">{{link text}}</a></li>
-  </ul>
-</div>
-```
-
-Replace the `{{placeholders}}` with the real links. Please do not add more than 2-4 items, or the menu will get to big for some screen sizes.
-
-## mobile link to jump to the form
-
-Mark the position of the form with an anchor name:
-
-```html
-<a name="action"></a>
-```
-
-Then put the link button into your content:
-
-```html
-<span id="fixed-waypoint-anchor" class="mobile-only"></span>
-<div id="fixed-waypoint-container" class="sticky mobile-only">
-  <a href="#action" class="button">Click</a>
-</div>
-```
-
-If the button should be visible in the content when scrolling down, add the class `visible` to the container:
-
-```html
-<span id="fixed-waypoint-anchor" class="mobile-only"></span>
-<div id="fixed-waypoint-container" class="sticky mobile-only visible">
-  <a href="#action" class="button">Click</a>
-</div>
-```

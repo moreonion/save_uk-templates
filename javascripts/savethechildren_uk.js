@@ -181,12 +181,10 @@ $(document).ready(function(){
 
   if (typeof moBirthdayToggleId !== 'undefined' && typeof moBirthdayFieldId !== 'undefined') {
     $('#' + moBirthdayToggleId).click(function(){
-      if( $(this).attr('checked')=='checked' )
-        {
-          $('#' + moBirthdayFieldId).show();
-        }
-        else{
+      if ($(this).attr('checked') == 'checked') {
           $('#' + moBirthdayFieldId).hide();
+        } else {
+          $('#' + moBirthdayFieldId).show();
         }
     });
   }

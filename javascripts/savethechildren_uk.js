@@ -180,6 +180,14 @@ $(document).ready(function(){
 // ---------- birthday toggle ---------------------------------------
 
   if (typeof moBirthdayToggleId !== 'undefined' && typeof moBirthdayFieldId !== 'undefined') {
+    // initialize
+    if ($(this).attr('checked') == 'checked') {
+      $('#' + moBirthdayFieldId).hide();
+    } else {
+      $('#' + moBirthdayFieldId).show();
+    }
+
+    // update on click
     $('#' + moBirthdayToggleId).click(function(){
       if ($(this).attr('checked') == 'checked') {
           $('#' + moBirthdayFieldId).hide();

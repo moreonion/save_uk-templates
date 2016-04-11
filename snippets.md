@@ -91,7 +91,7 @@ Replace the `{{placeholders}}` with the real links. Please do not add more than 
 ```html
 <div class="pgbar-thermometer line-after" data-target="250" data-start="0">
   <div class="t_body">
-    <div class="t_level"></div>
+    <div class="t_level"> </div>
   </div>
   <p><span class="t_current">0</span> people have taken action already</p>
 </div>
@@ -102,7 +102,6 @@ Feel free to replace the default copy with a text of your own! The numbers for `
 To set a new target, change the value for `data-target`. Change `data-start` to add an initial value, e.g. offline supporters. If the data-attributes are missing, the default values shown above will be used instead.
 
 Unfortunately, this is a little tricky because the EN editor keeps deleting all data-tags. To save them, you'll have to disable the editor by clicking the top left x-button.
-```
 
 ## form text
 

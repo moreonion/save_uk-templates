@@ -181,7 +181,7 @@ $(document).ready(function(){
 
   if (typeof moBirthdayToggleId !== 'undefined' && typeof moBirthdayFieldId !== 'undefined') {
     // initialize
-    if ($(this).attr('checked') == 'checked') {
+    if ($('#' + moBirthdayToggleId).attr('checked') == 'checked') {
       $('#' + moBirthdayFieldId).hide();
     } else {
       $('#' + moBirthdayFieldId).show();

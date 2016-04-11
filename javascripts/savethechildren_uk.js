@@ -176,4 +176,18 @@ $(document).ready(function(){
     }
     e.preventDefault();
   });
+
+// ---------- birthday toggle ---------------------------------------
+
+  if (typeof moBirthdayToggleId !== 'undefined' && typeof moBirthdayFieldId !== 'undefined') {
+    $('#' + moBirthdayToggleId).click(function(){
+      if( $(this).attr('checked')=='checked' )
+        {
+          $('#' + moBirthdayFieldId).show();
+        }
+        else{
+          $('#' + moBirthdayFieldId).hide();
+        }
+    });
+  }
 });

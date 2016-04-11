@@ -152,19 +152,19 @@ These are social share buttons for Facebook, Twitter and email sharing:
 
   <li class="facebook">
     <a class="button" href="https://www.facebook.com/sharer.php?u={{urlencoded url}}" title="Share this via Facebook!" target="_blank" data-share="facebook">
-      <i></i><span>Facebook</span>
+      <span class="icon"></span><span>Facebook</span>
     </a>
   </li>
 
   <li class="twitter">
     <a class="button" href="http://twitter.com/share?text={{urlencoded share text}}&amp;url={{urlencoded url}}" title="Share this via Twitter!" target="_blank" data-share="twitter">
-      <i></i><span>Twitter</span>
+      <span class="icon"></span><span>Twitter</span>
     </a>
   </li>
 
   <li class="email">
     <a class="button" href="{{EN email share url}}" title="Share this via E-Mail!" target="_blank" data-share="email">
-      <i></i><span>E-Mail</span>
+      <span class="icon"></span><span>E-Mail</span>
     </a>
   </li>
 

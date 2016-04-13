@@ -182,17 +182,17 @@ $(document).ready(function(){
   if (typeof moBirthdayToggleId !== 'undefined' && typeof moBirthdayFieldId !== 'undefined') {
     // initialize
     if ($('#' + moBirthdayToggleId).attr('checked') == 'checked') {
-      $('#' + moBirthdayFieldId).hide();
-    } else {
       $('#' + moBirthdayFieldId).show();
+    } else {
+      $('#' + moBirthdayFieldId).hide();
     }
 
     // update on click
     $('#' + moBirthdayToggleId).click(function(){
       if ($(this).attr('checked') == 'checked') {
-          $('#' + moBirthdayFieldId).hide();
-        } else {
           $('#' + moBirthdayFieldId).show();
+        } else {
+          $('#' + moBirthdayFieldId).hide();
         }
     });
   }

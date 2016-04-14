@@ -34,7 +34,7 @@ $(document).ready(function(){
     if ($toggle.is(':visible') && $target.length) {
       $target.hide();
       $toggle.on('click', function(e) {
-        $target.slideDown();
+        $target.slideToggle();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
         e.preventDefault();
       });
@@ -195,5 +195,16 @@ $(document).ready(function(){
           $('#' + moBirthdayFieldId).hide();
         }
     });
+  }
+
+// ---------- birthday default value --------------------------------
+  if (typeof moBirthdayFieldId !== 'undefined') {
+    var input = document.createElement("input");
+    if (typeof input.placeholder !== 'undefined') {
+      var $field = $('input', '#' + moBirthdayFieldId);
+      var value = $field.val();
+      $field[0].placeholder = value;
+      $field.val('');
+    }
   }
 });

@@ -188,7 +188,7 @@ $(document).ready(function(){
     }
 
     // update on click
-    $('#' + moBirthdayToggleId).click(function(){
+    $('#' + moBirthdayToggleId).on('change', function(){
       if ($(this).attr('checked') == 'checked') {
           $('#' + moBirthdayFieldId).show();
         } else {
@@ -198,6 +198,7 @@ $(document).ready(function(){
   }
 
 // ---------- birthday default value --------------------------------
+
   if (typeof moBirthdayFieldId !== 'undefined') {
     var input = document.createElement("input");
     if (typeof input.placeholder !== 'undefined') {
@@ -207,4 +208,5 @@ $(document).ready(function(){
       $field.val('');
     }
   }
+
 });

@@ -133,6 +133,10 @@ Include this at the bottom of your form for the (lighter) privacy text.
 </div>
 ```
 
+## birthday toggle
+
+In case the identifiers of the birthday field and birthday toggle change, make sure to adapt the variables in the template footer correspondingly.
+
 ## form steps
 
 If you’d like to add an image at the top of the form that spans across the whole column, e.g. to indicate the progress through the form steps, use this snippet:
@@ -180,8 +184,3 @@ Place this snippet on the thank you page to track submissions (it's hidden so it
 ```html
 <input type="hidden" name="track-submission" value="1">
 ```
-
-## birthday toggle
-
-In case the identifiers of the birthday field and birthday toggle change, make
-sure to adapt the variables in the template footer corrispondigly.

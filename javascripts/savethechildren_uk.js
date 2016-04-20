@@ -198,15 +198,15 @@ $(document).ready(function(){
   }
 
 // ---------- birthday default value --------------------------------
-
   if (typeof moBirthdayFieldId !== 'undefined') {
     var input = document.createElement("input");
     if (typeof input.placeholder !== 'undefined') {
       var $field = $('input', '#' + moBirthdayFieldId);
-      var value = $field.val();
-      $field[0].placeholder = value;
-      $field.val('');
+      if ($field.length > 0) {
+        var value = $field.val();
+        $field[0].placeholder = value;
+        $field.val('');
+      }
     }
   }
-
 });

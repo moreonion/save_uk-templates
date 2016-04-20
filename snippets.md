@@ -184,3 +184,8 @@ Place this snippet on the thank you page to track submissions (it's hidden so it
 ```html
 <input type="hidden" name="track-submission" value="1">
 ```
+
+## birthday toggle
+
+In case the identifiers of the birthday field and birthday toggle change, make
+sure to adapt the variables in the template footer corrispondigly.

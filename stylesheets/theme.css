@@ -2805,6 +2805,9 @@ h6 {
     width: 85%;
   }
 }
+.onecolumn form.middle {
+  padding: 1.25em;
+}
 /* ---------- header ------------------------------------------------ */
 #header {
   padding: 15px 0;

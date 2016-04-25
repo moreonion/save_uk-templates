@@ -5,30 +5,40 @@
  *
  * Compile only this file to generate the ccs for the EN template!
  */
+@font-face {
+  font-family: "TradeGothicW02-BoldCn20";
+  src: url("../fonts/TradeGothicW02-BoldCn20.eot?#iefix") format("eot"), url("../fonts/TradeGothicW02-BoldCn20.woff2") format("woff2"), url("../fonts/TradeGothicW02-BoldCn20.woff") format("woff"),url("../fonts/TradeGothicW02-BoldCn20.ttf") format("truetype"), url("../fonts/TradeGothicW02-BoldCn20.svg#df0f9c50-3ce3-4b1f-8120-074ca66b83b1") format("svg");
+}
+
 .serif {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
   font-style: normal;
 }
 .sans {
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: normal;
 }
 .sansl {
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: normal;
 }
 .sansb {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: bold;
   font-style: normal;
 }
 .sansi {
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: italic;
+}
+.sansb2 {
+  font-family: "TradeGothicW02-BoldCn20", Arial, "Helvetica Neue", Helvetica, sans;
+  font-weight: normal;
+  font-style: normal;
 }
 .element-invisible {
   position: absolute !important;
@@ -164,7 +174,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   color: #333333;
 }
 /* =============================================================================
@@ -214,8 +224,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
-  _font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
+  _font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-size: 100%;
 }
 /* Improve readability of pre-formatted text in all browsers */
@@ -2508,7 +2518,7 @@ html {
 body {
   background-color: #e5e5e4;
   color: #333333;
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: normal;
   font-size: 1em;
@@ -2579,37 +2589,46 @@ a:active {
 }
 /* ---------- headings ---------------------------------------------- */
 h1 {
-  font-size: 1.5em;
-  font-size: 1.5rem;
-  line-height: 1em;
-  margin-bottom: 1em;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", Helvetica, Arial, sans;
+  font-size: 1.8em;
+  font-size: 1.8rem;
+  line-height: 1.66666667em;
+  margin-bottom: 0.83333333em;
+  font-family: "TradeGothicW02-BoldCn20", Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: normal;
   color: #333333;
   text-decoration: none;
   word-wrap: break-word;
   text-transform: uppercase;
+  margin-top: .25em;
+  margin-bottom: .2em;
+  line-height: 1.2em;
 }
 @media screen and (min-width: 520px) {
   h1 {
-    font-size: 1.9em;
-    font-size: 1.9rem;
-    line-height: 1.57894737em;
-    margin-bottom: 0.78947368em;
+    font-size: 2.4em;
+    font-size: 2.4rem;
+    line-height: 1.25em;
+    margin-bottom: 0.625em;
+    margin-top: .35em;
+    margin-bottom: .1em;
+    line-height: 1.2em;
   }
 }
 h2,
 legend {
-  font-size: 1em;
-  font-size: 1rem;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
-  font-weight: bold;
+  font-size: 1.4em;
+  font-size: 1.4rem;
+  line-height: 1.07142857em;
+  margin-bottom: 1.07142857em;
+  font-family: "TradeGothicW02-BoldCn20", Arial, "Helvetica Neue", Helvetica, sans;
+  font-weight: normal;
   font-style: normal;
   color: #fc4c02;
   text-decoration: none;
+  margin-top: .25em;
+  margin-bottom: .2em;
+  line-height: 1.2em;
 }
 .en_right_wrapper h2,
 .en_right_wrapper legend {
@@ -2620,19 +2639,22 @@ legend {
 @media screen and (min-width: 520px) {
   h2,
   legend {
-    font-size: 1.4em;
-    font-size: 1.4rem;
-    line-height: 1.07142857em;
-    margin-bottom: 1.07142857em;
+    font-size: 1.8em;
+    font-size: 1.8rem;
+    line-height: 1.66666667em;
+    margin-bottom: 0.83333333em;
+    margin-top: .25em;
+    margin-bottom: .2em;
+    line-height: 1.2em;
   }
 }
 h3 {
-  font-size: 0.9em;
-  font-size: 0.9rem;
-  line-height: 1.66666667em;
-  margin-bottom: 1.66666667em;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
-  font-weight: bold;
+  font-size: 1.2em;
+  font-size: 1.2rem;
+  line-height: 1.25em;
+  margin-bottom: 1.25em;
+  font-family: "TradeGothicW02-BoldCn20", Arial, "Helvetica Neue", Helvetica, sans;
+  font-weight: normal;
   font-style: normal;
   color: #333333;
 }
@@ -2652,8 +2674,8 @@ h4 {
   font-size: 0.9rem;
   line-height: 1.66666667em;
   margin-bottom: 1.66666667em;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
-  font-weight: bold;
+  font-family: "TradeGothicW02-BoldCn20", Arial, "Helvetica Neue", Helvetica, sans;
+  font-weight: normal;
   font-style: normal;
   color: #333333;
 }
@@ -2662,7 +2684,7 @@ h5 {
   font-size: 0.75rem;
   line-height: 2em;
   margin-bottom: 2em;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: bold;
   font-style: normal;
   color: #333333;
@@ -2672,7 +2694,7 @@ h6 {
   font-size: 0.75rem;
   line-height: 2em;
   margin-bottom: 2em;
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: italic;
   color: #333333;
@@ -2725,7 +2747,7 @@ h6 {
   width: 100%;
   max-width: 500px;
   margin: 1.5em 0;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: bold;
   font-style: normal;
   font-size: 1em;
@@ -2763,7 +2785,7 @@ h6 {
 #footer.middle,
 #header.middle,
 .onecolumn form.middle {
-  padding: 1.25em;
+  padding: 1.25em 0;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2915,15 +2937,15 @@ input[type="reset"],
 button,
 a.button,
 .button {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
-  font-weight: bold;
+  font-family: "TradeGothicW02-BoldCn20", Arial, "Helvetica Neue", Helvetica, sans;
+  font-weight: normal;
   font-style: normal;
   background-color: #fd2315;
-  font-size: 120%;
+  font-size: 140%;
   display: block;
   width: 100%;
   max-width: 450px;
-  padding: 1.05em 1.5em 0.95em;
+  padding: .85em 1.5em 0.75em;
   margin: 0.75em 0;
   color: #ffffff;
   text-decoration: none;
@@ -2987,7 +3009,7 @@ select,
   font-size: 120%;
   background-color: #ffffff;
   border: 2px solid #b4b2ad;
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: normal;
   color: #333333;
@@ -3034,15 +3056,24 @@ label,
   font-size: 0.9rem;
   line-height: 1.66666667em;
   margin-bottom: 1.66666667em;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: bold;
   font-style: normal;
   display: block;
   margin-bottom: 0;
   margin-top: 0.375em;
   color: #000000;
-  font-weight: normal;
+  font-weight: 600;
   position: relative;
+}
+label a,
+.eaFormElementLabel a,
+.eaQuestionLabel a,
+.picker .picker-label a {
+  font-weight: 600;
+}
+.picker .picker-label {
+  font-weight: normal;
 }
 .eaQuestionLabel {
   margin-top: 0.75em;
@@ -3189,7 +3220,7 @@ input[type="checkbox"] {
   display: none;
 }
 .eaErrorMessage {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: bold;
   font-style: normal;
   color: #ffffff;
@@ -3251,7 +3282,7 @@ input[type="checkbox"] {
 .ea-error-block ul,
 .ea-error-block ol,
 .ea-error-block p {
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: normal;
   color: #fd2315;
@@ -3276,7 +3307,7 @@ input[type="checkbox"] {
   left: 35%;
   z-index: 200;
   color: #000000;
-  font-family: "Gill Sans W01 Book", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: normal;
   font-style: normal;
   text-align: center;
@@ -3329,7 +3360,7 @@ input[type="checkbox"] {
 }
 /* contact name container */
 .eaContactNameContainer {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: bold;
   font-style: normal;
   font-weight: normal;
@@ -3351,7 +3382,7 @@ input[type="checkbox"] {
 /* contact biographyLink container */
 .eaContactBiographyLinkContainer {
   position: relative;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans;
   font-weight: bold;
   font-style: normal;
   padding-top: 4px;
@@ -3549,8 +3580,7 @@ ul.share-links .twitter span.icon {
 }
 /* ---------- background info ---------------------------------------- */
 a.info-toggle {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Arial, sans;
-  font-weight: bold;
+  font-family: "TradeGothicW02-BoldCn20", Arial, "Helvetica Neue", Helvetica, sans;
   font-style: normal;
   display: block;
   padding-left: 30px;

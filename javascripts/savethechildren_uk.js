@@ -152,17 +152,19 @@ $(document).ready(function(){
   if ($('#fixed-waypoint-container').hasClass('visible') && $('#fixed-waypoint-anchor').length > 0) {
     $waypointTarget = $('#fixed-waypoint-anchor');
   }
-  var waypoint = new Waypoint({
-    element: $waypointTarget[0],
-    handler: function(direction) {
-      if (direction === 'down') {
-        $('#fixed-waypoint-container').removeClass('sticky');
-      } else {
-        $('#fixed-waypoint-container').addClass('sticky');
-      }
-    },
-    offset: '110%'
-  })
+  if ($waypointTarget.length > 0 && $waypointContainer.length > 0) {
+    var waypoint = new Waypoint({
+      element: $waypointTarget[0],
+      handler: function(direction) {
+        if (direction === 'down') {
+          $waypointContainer.removeClass('sticky');
+        } else {
+          $waypointContainer.addClass('sticky');
+        }
+      },
+      offset: '110%'
+    })
+  }
 
   $('#fixed-waypoint-container a.button').on('click', function(e) {
     var $toggle = $(this);
